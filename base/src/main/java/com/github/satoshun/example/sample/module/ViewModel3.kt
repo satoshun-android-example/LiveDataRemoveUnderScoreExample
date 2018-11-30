@@ -1,11 +1,11 @@
 package com.github.satoshun.example.sample.module
 
-interface ViewModel3 {
-  fun <T> ViewModelLiveData3<T>.postValue(value: T) {
+abstract class ViewModel3 {
+  protected fun <T> ViewModelLiveData3<T>.postValue(value: T) {
     internalPostValue(value)
   }
 
-  fun <T> ViewModelLiveData3<T>.setValue(value: T) {
+  protected fun <T> ViewModelLiveData3<T>.setValue(value: T) {
     internalSetValue(value)
   }
 }

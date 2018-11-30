@@ -1,10 +1,10 @@
 package com.github.satoshun.example.sample
 
 import com.github.satoshun.example.sample.module.ViewModel2
-import com.github.satoshun.example.sample.module.viewModelLiveData2
+import com.github.satoshun.example.sample.module.ViewModelLiveData2
 
-class MainViewModel2 : ViewModel2 {
-  val userName = viewModelLiveData2<String>()
+class MainViewModel2 : ViewModel2() {
+  val userName = ViewModelLiveData2<String>()
 
   fun update() {
     userName.setValue("test")
