@@ -46,15 +46,15 @@ android {
 }
 
 dependencies {
-  project(':base')
+  implementation project(':base')
 
-  api Libs.kotlin
-  api Libs.appcompat
-  api Libs.constraintlayout
-  api Libs.ktx
+  implementation Libs.kotlin
+  implementation Libs.appcompat
+  implementation Libs.constraintlayout
+  implementation Libs.ktx
 
-  api Libs.coroutine
-  api Libs.ui_coroutine
+  implementation Libs.coroutine
+  implementation Libs.ui_coroutine
 
   implementation Libs.fragmentx
   implementation Libs.activityx
