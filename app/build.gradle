@@ -46,6 +46,8 @@ android {
 }
 
 dependencies {
+  project(':base')
+
   api Libs.kotlin
   api Libs.appcompat
   api Libs.constraintlayout
